@@ -101,42 +101,57 @@
         android:layout_marginLeft="50dp"
         android:layout_toRightOf="@id/btn_createcar"/>
 
+        <!--<TextView-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:id="@+id/tv_resultmake"-->
+            <!--android:layout_below="@+id/btn_createcar"-->
+            <!--android:textSize="20dp"-->
+            <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_resultyear"-->
+        <!--android:layout_below="@+id/tv_resultmake"-->
+        <!--android:textSize="20dp"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_resultcolor"-->
+        <!--android:layout_below="@+id/tv_resultyear"-->
+        <!--android:textSize="20dp"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_resultpurchase"-->
+        <!--android:layout_below="@+id/tv_resultcolor"-->
+        <!--android:textSize="20dp"-->
+        <!--/>-->
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:id="@+id/tv_resultengine"-->
+        <!--android:layout_below="@+id/tv_resultpurchase"-->
+        <!--android:textSize="20dp" />-->
 
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:id="@+id/tv_resultmake"
-            android:layout_below="@+id/btn_createcar"
-            android:textSize="20dp"
-            />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_createcar"
+
+        >
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/tv_resultyear"
-        android:layout_below="@+id/tv_resultmake"
-        android:textSize="20dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_resultcolor"
-        android:layout_below="@+id/tv_resultyear"
-        android:textSize="20dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_resultpurchase"
-        android:layout_below="@+id/tv_resultcolor"
-        android:textSize="20dp"
-        />
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/tv_resultengine"
-        android:layout_below="@+id/tv_resultpurchase"
-        android:textSize="20dp"
-        />
+        android:id="@+id/display"
+        android:textColor="@android:color/black"/>
+
+    </ScrollView>
+
 
 
 

@@ -13,6 +13,8 @@ EditText height,weight;
 Button compute;
 Double ansswer;
 TextView result;
+Double weight1, height1;
+GetterSetter getset= new GetterSetter();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -26,9 +28,16 @@ TextView result;
         compute.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Double a = Double.parseDouble(height.getText().toString());
-                Double b = Double.parseDouble(weight.getText().toString());
-                ansswer = b/(a*a);
+
+                getset.setHeight(height.getText().toString());
+                getset.setWeight(weight.getText().toString());
+
+                Double heightt= Double.parseDouble(getset.getHeight());
+                Double weightt = Double.parseDouble(getset.getWeight());
+
+                Double a = heightt;
+                Double b = weightt;
+                ansswer = b/((a*a)/10000);
                 result.setText(ansswer.toString());
                 switch (v.getId()){
                     case R.id.computebmi:

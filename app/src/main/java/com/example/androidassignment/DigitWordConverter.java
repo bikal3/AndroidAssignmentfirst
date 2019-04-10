@@ -11,6 +11,7 @@ import java.text.DecimalFormat;
 public class DigitWordConverter extends AppCompatActivity implements View.OnClickListener {
 EditText enternumber;
 Button change;
+GetterSetter getset =new GetterSetter();
 TextView result;
     private static final String[] tensNames = { "", " ten", " twenty", " thirty", " forty",
             " fifty", " sixty", " seventy", " eighty", " ninety" };
@@ -34,7 +35,9 @@ TextView result;
     @Override
     public void onClick(View v) {
 //        String number=enternumber.getText().toString();
-        result.setText(convertLessThanOneThousand(Integer.parseInt(enternumber.getText().toString())));
+        getset.setEnternumbmer(enternumber.getText().toString());
+
+        result.setText(convertLessThanOneThousand(Integer.parseInt(getset.getEnternumbmer())));
     }
     private static String convertLessThanOneThousand(int number)
     {
